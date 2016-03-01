@@ -1,4 +1,6 @@
 # afcastano.github.io
-afcastano home page
+#### http://afcastano.github.io/
 
-Uses [minimalcss](https://github.com/billyshall/minimalcss)
+afcastano home page.
+
+Uses [minimalcss](https://github.com/billyshall/minimalcss) templates.
