@@ -2,6 +2,10 @@ header {
 	padding-bottom: 10px;
 }
 
+header span.aka {
+	font-size: 18px;
+}
+
 header small {
 	font-size: 15px;
 	margin-top: 5px;
