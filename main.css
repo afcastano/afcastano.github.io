@@ -14,25 +14,22 @@ header span.aka {
 	font-size: 18px;
 }
 
-@media (max-width: 415px) {
-	header small {
-		font-size: 12px;
-		margin-top: 5px;
-		display: inherit;
-	}	
-	nav.social-media {
-		padding-top: 10px;
-	}
+header small {
+	font-size: 12px;
+	margin-top: 5px;
+	display: inherit;
+}	
+nav.social-media {
+	padding-top: 10px;
+	float:none;
 }
 
-@media (min-width: 415px) {
+@media only screen and (min-width: 415px) {
 	header small {
 		font-size: 15px;
-		margin-top: 5px;
-		display: inherit;
 	}
 	nav.social-media {
 		float:right;
+		padding-top: initial;
 	}
 }
-
