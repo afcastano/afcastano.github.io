@@ -15,21 +15,22 @@ header span.aka {
 }
 
 header small {
-	font-size: 12px;
+	font-size: 15px;
 	margin-top: 5px;
 	display: inherit;
 }	
 nav.social-media {
-	padding-top: 10px;
-	float:none;
+	float:right;
+	padding-top: initial;
 }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (max-device-width: 415px) and (orientation: portrait){
 	header small {
-		font-size: 15px;
+		font-size: 12px;
 	}
 	nav.social-media {
-		float:right;
-		padding-top: initial;
+		padding-top: 10px;
+		float:none;
+		display: none;
 	}
 }
