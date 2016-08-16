@@ -2,6 +2,14 @@ header {
 	padding-bottom: 10px;
 }
 
+header a.subheader {
+	color: black;
+	text-decoration: underline;
+}
+a.article-title {
+	font-size: 16px;
+}
+
 header span.aka {
 	font-size: 18px;
 }
