@@ -14,8 +14,25 @@ header span.aka {
 	font-size: 18px;
 }
 
-header small {
-	font-size: 15px;
-	margin-top: 5px;
-	display: inherit;
+@media (max-width: 415px) {
+	header small {
+		font-size: 12px;
+		margin-top: 5px;
+		display: inherit;
+	}	
+	nav.social-media {
+		padding-top: 10px;
+	}
 }
+
+@media (min-width: 415px) {
+	header small {
+		font-size: 15px;
+		margin-top: 5px;
+		display: inherit;
+	}
+	nav.social-media {
+		float:right;
+	}
+}
+
