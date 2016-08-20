@@ -42,4 +42,11 @@ section.main .container .content .post-item {
 	section.header .container div.subheader div.spacer{
 	  display: inherit;
 	}
+	
+	body {
+	  -webkit-justify-content: inherit;
+	  -moz-justify-content: inherit;
+	  -ms-justify-content: inherit;
+	  justify-content: inherit;
+	}
 }
