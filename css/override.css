@@ -28,6 +28,7 @@ ul.blog {
 
 section.main .container .content .post-item {
 	list-style-position: inherit;
+	margin-bottom: 5px;
 }
 
 @media (min-width: 600px) {
@@ -39,8 +40,12 @@ section.main .container .content .post-item {
 	  display: flex;
 	}	
 
-	section.header .container div.subheader div.spacer{
+	section.header .container div.subheader div.spacer {
 	  display: inherit;
+	}
+
+	section.main .container .content .post-item {
+		margin-bottom: 0px;
 	}
 	
 	body {
