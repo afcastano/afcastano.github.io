@@ -1,0 +1,45 @@
+/* override css styles of the main theme here */
+section.header .name {
+	text-transform: none;
+	font-size: 22px
+}
+
+section.header .name small {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+section.header a.company {
+	color: #111;
+	text-decoration: underline;
+}
+
+section.header .container div.subheader {
+	  text-align: center;
+}
+
+section.header .container div.subheader div.spacer{
+	  display: none;
+}
+
+ul.blog {
+	padding-left: 20px;
+}
+
+section.main .container .content .post-item {
+	list-style-position: inherit;
+}
+
+@media (min-width: 600px) {
+	ul.blog {
+		padding-left: 0;
+	}
+
+	section.header .container div.subheader {
+	  display: flex;
+	}	
+
+	section.header .container div.subheader div.spacer{
+	  display: inherit;
+	}
+}
