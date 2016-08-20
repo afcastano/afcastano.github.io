@@ -3,4 +3,4 @@
 
 afcastano home page.
 
-Uses [minimalcss](https://github.com/billyshall/minimalcss) templates.
+Uses [Hugo cocoa](https://github.com/nishanths/cocoa-hugo-theme#getting-started) theme.
