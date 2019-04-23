@@ -478,7 +478,6 @@ section.main .container .content .post-item {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  display: list-item;
   list-style: disc inside;
 }
 section.main .container .content .post-item .meta {
