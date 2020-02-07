@@ -8,7 +8,11 @@ handlers:
   static_dir: css
   secure: always
 
+- url: /work
+  static_dir: work
+  secure: always
+
 - url: /(.*)
   static_files: index.html
   upload: index.html
-  secure: always
+  secure: always  
