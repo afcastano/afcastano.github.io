@@ -8,9 +8,13 @@ handlers:
   static_dir: css
   secure: always
 
-- url: /work
-  static_dir: work
+- url: /work/trolley/a
+  static_dir: work/trolley/a
   secure: always
+
+- url: /work/trolley/b
+  static_dir: work/trolley/b
+  secure: always  
 
 - url: /(.*)
   static_files: index.html
