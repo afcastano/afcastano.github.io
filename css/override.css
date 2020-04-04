@@ -31,7 +31,35 @@ section.main .container .content .post-item {
 	margin-bottom: 10px;
 }
 
+dd {
+	margin-bottom: 10px;
+}
+
 @media (min-width: 600px) {
+	dl {
+		width: 100%;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	dt {
+		float: left;
+		width: 30%;
+		text-align: right;
+		/* adjust the width; make sure the total of both is 100% */
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	dd {
+		float: left;
+		width: 70%;
+		/* adjust the width; make sure the total of both is 100% */
+		padding: 0;
+		margin: 0;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+
 	ul.blog {
 		padding-left: 0;
 	}
