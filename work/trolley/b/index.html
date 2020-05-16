@@ -32,37 +32,11 @@
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
+
+  <link rel="manifest" href="https://andrescastano.dev/work/trolley/b/manifest.json">
 </head>
 
 <body class="landing-page sidebar-collapse">
-  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://andrescastano.dev" target="_blank">
-          Andrés Castaño </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#features">
-              <i class="material-icons">featured_play_list</i> Features
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#request">
-              <i class="material-icons">how_to_reg</i> Register
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg2.jpg')">
     <div class="container">
       <div class="row">
@@ -70,8 +44,14 @@
           <h1 class="title">Grocery shopping list done right</h1>
           <h4>Trolley is a shopping list optimised for user experience.<br/>
             <strong>At home: </strong>Enter your items easily or let Trolley suggest what you need based on your buying habits.<br/>
-            <strong>At the supermarket: </strong>Trolley allows you to organise your items by section for a more effective and pleasant experience.</h4>
+            <strong>At the supermarket: </strong>Trolley allows you to organise your items by section for a more effective and pleasant shopping experience.</h4>
           <br>
+          <a href='https://play.google.com/store/apps/details?id=com.trolleyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+            <img alt='Get it on Google Play' src='assets/img/google-play-badge.png'style="width: 180px; margin-top: 5px;" />
+          </a>
+          <a href="https://web.trolleyapp.co" target="_blank">
+            <img src="assets/img/pwa.png" class="img-fluid" alt="Responsive image" style="width: 180px; margin-top: 5px;" />  
+          </a>
           <a href="https://youtu.be/Yscvpd6lfSQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
             <i class="fa fa-play"></i>  Watch video
           </a>
@@ -157,44 +137,6 @@
   
         </div>
       </div>
-      <div class="section section-contacts">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center title" id="request">Request to be a beta tester</h2>
-            <h4 class="text-center description">Trolley is currently being developed, however it is very much usable. If you would like to test it, please fill out this form and I'll contact you within the next 24 hours.</h4>
-            <form class="contact-form">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Your Name</label>
-                    <input type="text" class="form-control" id="name-field">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Your Email</label>
-                    <input type="email" class="form-control" id="email-field">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">IOS or Android?</label>
-                    <input type="text" class="form-control" id="platform-field">
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-4 ml-auto mr-auto text-center">
-                  <button class="btn btn-primary btn-raised" id="register_btn" onclick="sendRegistrationMail()">
-                    Send Request
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <footer class="footer footer-default">
@@ -203,8 +145,7 @@
         &copy;
         <script>
           document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+        </script>, <a href="https://andrescastano.dev" target="_blank">Andr&eacute;s Casta&ntilde;o</a>
       </div>
     </div>
   </footer>
@@ -221,29 +162,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
-  <script>
-    let inputs = document.querySelectorAll('.form-control'),
-    btn = document.querySelector('#register_btn')
-    btn.disabled = true
-
-    for (i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener('input',() => {
-        let values = []
-        inputs.forEach(v => values.push(v.value))
-        btn.disabled = values.includes('');
-      })
-    }
-
-    function sendRegistrationMail() {
-      var name = document.querySelector('#name-field').value;
-      var email = document.querySelector('#email-field').value;
-      var platform = document.querySelector('#platform-field').value;
-      var content = encodeURIComponent('Name: '+ name + '\nEmail: ' + email + '\nPlatform: ' + platform);
-      var win = window.open('mailto:andresfelipecastano@gmail.com?subject=Trolley beta tester request&body=' + content, '_blank');
-      win.focus();
-    }
-    
-  </script>
 </body>
 
 </html>
