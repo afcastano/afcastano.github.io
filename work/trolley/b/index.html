@@ -34,6 +34,19 @@
   <link href="assets/demo/demo.css" rel="stylesheet" />
 
   <link rel="manifest" href="/manifest.json">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>                               
+  <script type="text/javascript">
+      $(document).ready(function(){  
+        var iOS = false;
+        console.log(navigator.platform);
+        if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
+          iOS = true;
+        }
+        if (iOS === true) {
+          $('#android').hide();
+        }
+    });
+  </script>
 </head>
 
 <body class="landing-page sidebar-collapse">
@@ -46,10 +59,10 @@
             <strong>At home: </strong>Enter your items easily or let Trolley suggest what you need based on your buying habits.<br/>
             <strong>At the supermarket: </strong>Trolley allows you to organise your items by section for a more effective and pleasant shopping experience.</h4>
           <br>
-          <a href='https://play.google.com/store/apps/details?id=com.trolleyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
+          <a href='https://play.google.com/store/apps/details?id=com.trolleyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank" id="android">
             <img alt='Get it on Google Play' src='assets/img/google-play-badge.png'style="width: 180px; margin-top: 5px;" />
           </a>
-          <a href="https://trolley-2k-dev.firebaseapp.com">
+          <a href="https://trolley-2k-dev.firebaseapp.com" id="pwa">
             <img src="assets/img/pwa.png" class="img-fluid" alt="Responsive image" style="width: 180px; margin-top: 5px;" />  
           </a>
           <a href="https://youtu.be/Yscvpd6lfSQ" target="_blank" class="btn btn-danger btn-raised btn-lg">

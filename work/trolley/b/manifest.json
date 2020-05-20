@@ -52,8 +52,8 @@
     }
   ],
   "display": "fullscreen",
-  "scope": "https://trolley-2k-dev.firebaseapp.com",
-  "start_url": "https://trolley-2k-dev.firebaseapp.com",
+  "scope": "https://trolleyapp.co",
+  "start_url": "https://trolleyapp.co",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "lang": "",
