@@ -13,168 +13,215 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/trolley.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Trolley
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="assets/demo/demo.css" rel="stylesheet" />
-
-  <link rel="manifest" href="/manifest.json">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>                               
-  <script type="text/javascript">
-      $(document).ready(function(){  
-        var iOS = false;
-        console.log(navigator.platform);
-        if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
-          iOS = true;
-        }
-        if (iOS === true) {
-          $('#android').hide();
-        }
-    });
-  </script>
-</head>
-
-<body class="landing-page sidebar-collapse">
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg2.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="title">Grocery shopping list done right</h1>
-          <h4>Trolley is a shopping list optimised for user experience.<br/>
-            <strong>At home: </strong>Enter your items easily or let Trolley suggest what you need based on your buying habits.<br/>
-            <strong>At the supermarket: </strong>Trolley allows you to organise your items by section for a more effective and pleasant shopping experience.</h4>
-          <br>
-          <a href='https://play.google.com/store/apps/details?id=com.trolleyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank" id="android">
-            <img alt='Get it on Google Play' src='assets/img/google-play-badge.png'style="width: 180px; margin-top: 5px;" />
-          </a>
-          <a href="https://trolley-2k-dev.firebaseapp.com" id="pwa">
-            <img src="assets/img/pwa.png" class="img-fluid" alt="Responsive image" style="width: 180px; margin-top: 5px;" />  
-          </a>
-          <a href="https://youtu.be/Yscvpd6lfSQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
-            <i class="fa fa-play"></i>  Watch video
-          </a>
-        </div>
-        <div class="col-md-6 mr-auto ml-auto my-auto">
-          <img src="assets/img/Phone.png" class="img-fluid" alt="Responsive image">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main main-raised" id="features">
-    <div class="container">
-      <div class="section text-center">
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto my-auto">
-            <h2 class="title">Trolley</h2>
-            <h5 class="description"><strong>Trolley is not a TODO list.</strong><br/>Trolley is full of features optimised for grocery shopping. The more you use it, the easier it gets.</h5>
-          </div>
-        </div>
-        <div class="features">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">input</i>
-                </div>
-                <h4 class="info-title">Easy input</h4>
-                <p>Choose from your previous items or enter new items easily. Add categories to them for easier navigation in the supermarket.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">list</i>
-                </div>
-                <h4 class="info-title">Smart list</h4>
-                <p>Let Trolley suggest what items should be running out in your pantry. This feature gets better after you've used trolley for a while.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">playlist_add_check</i>
-                </div>
-                <h4 class="info-title">Mark items easily</h4>
-                <p>In the supermarket, use the categories you've defined to navigate and simply swipe right if you got the item. No worries in case the item is out of stock, swipe left to mark it as "to buy later"</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">fastfood</i>
-                </div>
-                <h4 class="info-title">Recipes</h4>
-                <p>Add your recipe ingredients and share them with others.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">people</i>
-                </div>
-                <h4 class="info-title">Multi-user lists</h4>
-                <p>Share your list with others. Let your family enter new items while you are at the supermarket.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">more_horiz</i>
-                </div>
-                <h4 class="info-title">And more...</h4>
-                <ul style="font-size: 14px; color: #999999;">
-                  <li>Use your gmail account to securely access Trolley.</li>
-                  <li>No internet? No worries, use Trolley offline and it will sync next time you open it.</li>
-                  <li>Available in Android and Web. IOS users can install it as a <a href="https://www.youtube.com/watch?v=5nlmv2i301U" target="_blank">Progresive web app</a>.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer footer-default">
-    <div class="container">
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, <a href="https://andrescastano.dev" target="_blank">Andr&eacute;s Casta&ntilde;o</a>
-      </div>
-    </div>
-  </footer>
-  <!--   Core JS Files   -->
-  <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
-</body>
-
-</html>
+ <!DOCTYPE html>
+ <html>
+ 
+ <head>
+   <meta charset="utf-8" />
+   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/trolley.png">
+   <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   <title>
+     Trolley
+   </title>
+   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+     name='viewport' />
+   <!--     Fonts and icons     -->
+   <link rel="stylesheet" type="text/css"
+     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+   <!-- CSS Files -->
+   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
+   <!-- CSS Just for demo purpose, don't include it in your project -->
+   <link href="assets/demo/demo.css" rel="stylesheet" />
+ 
+ </head>
+ 
+ <body class="landing-page sidebar-collapse">
+   <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg2.jpg')">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+           <h1 class="title" lang="en">Grocery shopping list done right</h1>
+           <h1 class="title" lang="es">Una lista de compras bien hecha</h1>
+           <h4 lang="en">Trolley is a shopping list optimised for user experience.<br />
+             <strong>At home: </strong>Enter your items easily or let Trolley suggest what you need based on your buying
+             habits.<br />
+             <strong>At the supermarket: </strong>Trolley allows you to organise your items by section for a more
+             effective and pleasant shopping experience.</h4>
+           <h4 lang="es">Trolley es una lista de compras optimizada para una buena experiencia al usarla.<br />
+              <strong>En la casa: </strong>Ingresa elementos a la lista fácilmente o deja que Trolley te sugiera lo que puedes necesitar
+              basado en tus compras pasadas.<br />
+              <strong>En el supermercado: </strong>Trolley te permite organizar tus items por sección lo cual te ayudará a tener una compra mas placentera y efectiva.</h4>  
+           <br>
+           <a href='https://play.google.com/store/apps/details?id=com.trolleyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+             target="_blank" id="android" lang="en">
+             <img alt='Get it on Google Play' src='assets/img/google-play-badge.png'
+               style="width: 180px; margin-top: 5px;" />
+           </a>
+           <a href="https://trolley-2k-dev.firebaseapp.com" target="_blank" lang="en">
+             <img src="assets/img/pwa.png" class="img-fluid" alt="Responsive image"
+               style="width: 180px; margin-top: 5px;" />
+           </a>
+           <a href="https://youtu.be/Yscvpd6lfSQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+             <i class="fa fa-play"></i> <span lang="en">Watch example</span><span lang="es">Mira el ejemplo</span>
+           </a>
+         </div>
+         <div class="col-md-6 mr-auto ml-auto my-auto">
+           <img src="assets/img/Phone.png" class="img-fluid" alt="Responsive image">
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="main main-raised" id="features">
+     <div class="container">
+       <div class="section text-center">
+         <div class="row">
+           <div class="col-md-6 ml-auto mr-auto my-auto">
+             <h2 class="title">Trolley</h2>
+             <h5 class="description" lang="en"><strong>Trolley is not a TODO list.</strong><br />Trolley is full of features
+               optimised for grocery shopping. The more you use it, the easier it gets.</h5>
+             <h5 class="description" lang="es"><strong>Trolley no es una lista de pendientes.</strong><br />Trolley esta lleno de funcionalidad
+            optimisada para compras. Mientras más lo uses, más aprende de tus hábitos y más fácil será usarlo.</h5>
+           </div>
+         </div>
+         <div class="features">
+           <div class="row">
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-info">
+                   <i class="material-icons">input</i>
+                 </div>
+                 <h4 class="info-title" lang="en">Easy input</h4>
+                 <h4 class="info-title" lang="es">Fácil ingreso</h4>
+                 <p lang="en">Choose from your previous items or enter new items easily. Add categories to them for easier
+                   navigation in the supermarket.</p>
+                 <p lang="es">Escójelos de tu lista de compras recientes o ingresa nuevos elementos fácilmente. Adiciona categorías para navegar
+                   más fácil en el supermercado.
+                 </p>  
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-success">
+                   <i class="material-icons">list</i>
+                 </div>
+                 <h4 class="info-title" lang="en">Smart list</h4>
+                 <h4 class="info-title" lang="es">Listas inteligentes</h4>
+                 <p lang="en">Let Trolley suggest what items should be running out in your pantry. This feature gets better after
+                   you've used trolley for a while.</p>
+                 <p lang="es">Trolley puede sugerirte que alimentos pueden estar acabandose en tu alacena. Mientras mas uses Trolley, mas acertadas serán las sugerencias.</p>  
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-danger">
+                   <i class="material-icons">playlist_add_check</i>
+                 </div>
+                 <h4 class="info-title" lang="en">Mark items easily</h4>
+                 <h4 class="info-title" lang="es">Indica fácilmente cuando has comprado los elementos</h4>
+                 <p lang="en">In the supermarket, use the categories you've defined to navigate and simply swipe right if you got
+                   the item. No worries in case the item is out of stock, swipe left to mark it as "to buy later"</p>
+                 <p lang="es">En el supermercaso, usa las categorías que has definido para navegar. Cuando tengas tu compra, simplemente desliza a la derecha para 
+                   marcarlo como comprado. En caso de que lo que quieres este agotado, no hay problema! Desliza a la izquierda y selecciona "Comprar después".
+                 </p>  
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-info">
+                   <i class="material-icons">fastfood</i>
+                 </div>
+                 <h4 class="info-title" lang="en">Recipes</h4>
+                 <h4 class="info-title" lang="es">Recetas</h4>
+                 <p lang="en">Add your recipe ingredients and share them with others.</p>
+                 <p lang="es">Adiciona tus ingredientes para recetas y compartelos con otros.</p>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-success">
+                   <i class="material-icons">people</i>
+                 </div>
+                 <h4 class="info-title" lang="en">Multi-user lists</h4>
+                 <h4 class="info-title" lang="es">Listas multi-usuario</h4>
+                 <p lang="en">Share your list with others. Let your family enter new items while you are at the supermarket.</p>
+                 <p lang="es">Comparte tus listas con otros. Tu familia podrá ingresar nuevos elementos mientras tu estás en el supermercado.</p>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="info">
+                 <div class="icon icon-danger">
+                   <i class="material-icons">more_horiz</i>
+                 </div>
+                 <h4 class="info-title" lang="en">And more...</h4>
+                 <h4 class="info-title" lang="es">Y mucho mas...</h4>
+                 <ul style="font-size: 14px; color: #999999;">
+                   <li lang="en">Use your gmail account to securely access Trolley.</li>
+                   <li lang="es">Usa tu cuenta en Gmail para acceder seguramente a Trolley.</li>
+                   <li lang="en">No internet? No worries, use Trolley offline and it will sync next time you open it.</li>
+                   <li lang="es">No tienes internet? No hay problema! Trolley puede ser usado "offline"</li>
+                   <li lang="en">Available in Android and Web. IOS users can install it as a <a
+                       href="https://www.youtube.com/watch?v=5nlmv2i301U" target="_blank">Progresive web app</a>.</li>
+                   <li lang="es">Disponible en Android y Web. Los usuarios IOS pueden instalarla como una <a
+                        href="https://www.youtube.com/watch?v=5nlmv2i301U" target="_blank">Aplicación web progresiva</a>.</li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+   <footer class="footer footer-default">
+     <div class="container">
+       <div class="copyright float-right">
+         &copy;
+         <script>
+           document.write(new Date().getFullYear())
+         </script>, <a href="https://andrescastano.dev" target="_blank">Andr&eacute;s Casta&ntilde;o</a>
+       </div>
+     </div>
+   </footer>
+   <!--   Core JS Files   -->
+   <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+ 
+   <script id="rendered-js">
+     var lang = navigator.language;
+     console.log('Page lang: ' + lang);
+     
+     if (lang && lang.toLowerCase().startsWith('es')) {
+      $('[lang="en"]').hide();
+     } else {
+      $('[lang="es"]').hide();
+     }
+   </script>
+ 
+   <script type="text/javascript">
+     $(document).ready(function () {
+       var iOS = false;
+       console.log(navigator.platform);
+       if (!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)) {
+         iOS = true;
+       }
+       if (iOS === true) {
+         $('#android').hide();
+       }
+     });
+   </script>
+ 
+   <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+   <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+   <script src="assets/js/plugins/moment.min.js"></script>
+   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+   <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+   <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+   <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+ </body>
+ 
+ </html>
